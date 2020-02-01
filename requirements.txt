@@ -1,0 +1,4 @@
+pygame==1.9.6
+PyTMX==3.21.7
+PyTweening==1.0.3
+six==1.14.0
