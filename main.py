@@ -74,7 +74,7 @@ class Game:
         self.night = True
         self.new()
         self.mini_map = pg.Surface([self.map_rect.width / 15, self.map_rect.height / 15], pg.SRCALPHA, 32)
-        self.mini_map_img = pg.image.load(path.join(self.map_folder, 'clab_map.png'))
+        self.mini_map_img = pg.image.load(path.join(self.map_folder, 'map.png'))
         self.mini_map_img = pg.transform.scale(self.mini_map_img, (int(self.map_rect.width / 15), int(self.map_rect.height / 15)))
         self.camera = Camera(self, self.map.width, self.map.height)
         self.fps_clock = pg.time.Clock()
@@ -358,7 +358,7 @@ class Game:
                         self.night = not self.night
 
     def new(self):
-        self.map = TiledMap(path.join(self.map_folder, 'clab_map.tmx'))
+        self.map = TiledMap(path.join(self.map_folder, 'map.tmx'))
         self.map_img = self.map.make_map()
         self.map_rect = self.map_img.get_rect()
         for tile_object in self.map.tmxdata.objects:

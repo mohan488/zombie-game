@@ -9,7 +9,7 @@ class Board:
 
     def __init__(self, width: int, height: int):
         self.surface = pg.display.set_mode((width, height), 0, 32)
-        pg.display.set_caption('Zombie in CLab')
+        pg.display.set_caption('Zombie Game')
         self.width = width
         self.height = height
         self.intro_bg = pg.image.load("images/intro.jpg")
