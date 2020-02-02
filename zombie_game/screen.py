@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 
 # libs
 import pytmx
-
 from zombie_game.settings import *
 
 

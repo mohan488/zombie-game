@@ -8,7 +8,7 @@ from zombie_game.settings import *
 class Board:
 
     def __init__(self, width: int, height: int):
-        self.surface = pg.display.set_mode((width, height), 0, 32)
+        self.surface = pg.display.set_mode((width, height), 5, 32)
         pg.display.set_caption('Zombie Game')
         self.width = width
         self.height = height

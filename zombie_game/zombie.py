@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 
 # libs
 from random import randint, choice, random
-
 from zombie_game.functions import collide_with_object
 from zombie_game.settings import *
 from zombie_game.smoke import Smoke
